@@ -1,0 +1,2626 @@
+body {
+    background-color: black;
+}
+
+head {
+    background-color: black;
+}
+
+p {
+   color: white;
+ }
+
+
+::selection {
+    color: #fff;
+    background: #333;
+}
+::-moz-selection {
+    color: #fff;
+    background: #333;
+}
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+    letter-spacing: -1px;
+    line-height: normal;
+    color: #fff;
+}
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+}
+h3 {
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+}
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+}
+.blindText {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    line-height: 0px;
+}
+.line_sprite:before,
+.line_sprite:after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 3px;
+    position: absolute;
+}
+.m_item {
+    display: none !important;
+}
+@media only screen and (max-width: 768px) {
+    .m_item {
+        display: block !important;
+    }
+}
+.pc_item {
+    display: block !important;
+}
+@media only screen and (max-width: 768px) {
+    .pc_item {
+        display: none !important;
+    }
+}
+body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'ë§‘ì€ ê³ ë”•', 'Noto Sans', Dotum, 'ë‹ì›€', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.5px;
+    line-height: normal;
+}
+body header {
+    position: fixed;
+    width: 100%;
+    display: block;
+    min-height: 28px;
+    padding: 0px;
+    z-index: 10;
+}
+html.svg body header {
+    background: #222;
+}
+@media only screen and (max-width: 768px) {
+    html.svg body header {
+        background: rgba(0, 0, 0, 0);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.9)), color-stop(1, rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+#wrap .mainPage {
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 110px;
+}
+@media only screen and (max-width: 768px) {
+    #wrap .mainPage {
+        padding-top: 90px;
+        width: 100%;
+    }
+}
+#wrap .mainPage h1 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 52px;
+    font-size: 0;
+    color: transparent !important;
+}
+#wrap .mainPage h1 p {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("./images/4x/minititle.png") no-repeat top center;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+    filter: alpha(opacity = (0));
+    -webkit-transform: translate(-60px, 0);
+    -moz-transform: translate(-60px, 0);
+    -ms-transform: translate(-60px, 0);
+    -o-transform: translate(-60px, 0);
+    transform: translate(-60px, 0);
+    -webkit-transition: all 0.7s cubic-bezier(0.56, 0.01, 0.305, 0.99);
+    -moz-transition: all 0.7s cubic-bezier(0.56, 0.01, 0.305, 0.99);
+    -o-transition: all 0.7s cubic-bezier(0.56, 0.01, 0.305, 0.99);
+    -ms-transition: all 0.7s cubic-bezier(0.56, 0.01, 0.305, 0.99);
+    transition: all 0.7s cubic-bezier(0.56, 0.01, 0.305, 0.99);
+}
+#wrap .mainPage h1 p:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 390px;
+    top: -2px;
+    width: 30px;
+    height: 300px;
+    margin-bottom: 10px;
+    background: url("./images/4x/trophy.png") no-repeat top center;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+    filter: alpha(opacity = (0));
+    -webkit-animation: crown 0.7s linear infinite 2s;
+    -moz-animation: crown 0.7s linear infinite 2s;
+    -ms-animation: crown 0.7s linear infinite 2s;
+    -o-animation: crown 0.7s linear infinite 2s;
+    animation: crown 0.7s linear infinite 2s;
+}
+@-webkit-keyframes crown {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+@-moz-keyframes crown {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+@-ms-keyframes crown {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+@-o-keyframes crown {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+@keyframes crown {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+#wrap .mainPage h1 p.on {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+    filter: alpha(opacity = (100));
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+#wrap .mainPage h1 strong {
+    position: absolute;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    background: url("./images/4x/title.png") no-repeat top center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+    filter: alpha(opacity = (0));
+}
+#wrap .mainPage h1 strong.on {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+    filter: alpha(opacity = (100));
+}
+@media only screen and (max-width: 768px) {
+    #wrap .mainPage h1 {
+        width: 100%;
+        background-size: 100%;
+        height: 100px;
+    }
+    #wrap .mainPage h1 p {
+        margin: 0 auto;
+        /*max-width: 405px;*/
+        height: 60%;
+        background: url("./images/4x/minititle.png") no-repeat top center;
+        background-size: 100%;
+    }
+    #wrap .mainPage h1 p:before {
+        display: none;
+    }
+    #wrap .mainPage h1 strong {
+        display: block;
+        position: relative;
+        /*margin: 0px auto;*/
+        /*max-width: 800px;*/
+        height: 100%;
+        background: url("./images/4x/title.png") no-repeat top center;
+        background-size: 100%;
+    }
+}
+#wrap .mainPage p.script {
+    line-height: 1.5;
+    font-size: 17px;
+    color: white;
+    padding-top: 40px;
+    /*padding: 55px 10px 15px;*/
+}
+@media only screen and (max-width: 768px) {
+    #wrap .mainPage p.script {
+        text-align: center;
+        /*padding: 28px 20px 15px;*/
+    }
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+#wrap .t_treble {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    padding-top: 150px;
+    padding-right: 10px;
+    text-align: center;
+}
+#wrap .d_treble {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 0px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    /*text-align: center;*/
+}
+#wrap .t_double {
+    /**zoom: 1;*/
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    padding-top: 120px;
+    padding-right: 10px;
+    text-align: center;
+}
+#wrap .d_double {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 0px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    /*text-align: center;*/
+}
+#wrap .d_double {
+    *zoom: 1;
+    width: 100%;
+    height: auto;
+    float: left;
+    /*text-align: center;*/
+}
+@media only screen and (max-width: 768px) {
+    #wrap .t_treble {
+        padding-top: 90px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #wrap .titlePage {
+        width: 100%;
+        max-width: 780px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+}
+
+
+/*------------------------------double--------------------------------*/
+#wrap .d_treble {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#wrap .d_treble ul {
+    *zoom: 1;
+    margin: auto;
+    padding-right: 40px;
+    display: inline-block;
+}
+#wrap .d_treble ul:after {
+    /*content: '';*/
+    clear: both;
+    /*display: block;*/
+}
+#wrap .d_treble ul li {
+    float: left;
+    width: 90px;
+    padding: 0;
+}
+#wrap .d_treble ul li img {
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wrap .d_double {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#wrap .d_double ul {
+    *zoom: 1;
+    width: 900px;
+    margin: auto;
+    display: inline-block;
+padding-right:40px;
+}
+#wrap .d_double ul:after {
+    /*content: '';*/
+    clear: both;
+    /*display: block;*/
+}
+#wrap .d_double ul li {
+    float: left;
+    width: 90px;
+    padding: 0;
+}
+#wrap .d_double ul li img {
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-------------------------------------------------------------------------*/
+@media only screen and (max-width: 900px) {
+    #wrap .d_double ul {
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #wrap .t_double {
+        width: 100%;
+        padding-top: 10px;
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #wrap .t_treble {
+        padding-top: 90px;
+        width: 100%;
+    }
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap .dataPage {
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    #wrap .dataPage {
+        padding-top: 30px;
+        width: 100%;
+    }
+}
+
+
+/*----------------------------treble------------------------------*/
+#wrap .dataPage .treble {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#wrap .dataPage .treble ul {
+    *zoom: 1;
+}
+#wrap .dataPage .treble ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#wrap .dataPage .treble ul li {
+    float: left;
+    width: 13%;
+    padding: 0 3%;
+}
+#wrap .dataPage .treble ul li img {
+    width: 135%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*/
+
+
+#wrap #box_1 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_1 #myChart_1 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+#wrap #box_2 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_2 #myChart_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+#wrap #box_3 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_3 #myChart_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+#wrap #box_4 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_4 #myChart_4 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_5 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_5 #myChart_5 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #box_6 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_6 #myChart_6 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_7 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_7 #myChart_7 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_8 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_8 #myChart_8 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_9 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_9 #myChart_9 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_10 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_10 #myChart_10 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_11 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_11 #myChart_11 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_12 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_12 #myChart_12 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_13 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_13 #myChart_13 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_14 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_14 #myChart_14 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_15 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_15 #myChart_15 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_16 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_16 #myChart_16 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_17 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_17 #myChart_17 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_18 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_18 #myChart_18 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_19 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_19 #myChart_19 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_20 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_20 #myChart_20 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_21 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_21 #myChart_21 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_22 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_22 #myChart_22 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_23 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_23 #myChart_23 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_24 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_24 #myChart_24 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_25 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_25 #myChart_25 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_26 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_26 #myChart_26 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_27 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_27 #myChart_27 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_28 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_28 #myChart_28 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_29 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_29 #myChart_29 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_30 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_30 #myChart_30 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_31 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_31 #myChart_31 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_32 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_32 #myChart_32 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_33 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_33 #myChart_33 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_34 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_34 #myChart_34 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #box_35 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-left: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #box_35 #myChart_35 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>POPBOX START>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #popbox_1 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_1 #myChart_1_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+#wrap #popbox_2 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_2 #myChart_2_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+#wrap #popbox_3 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_3 #myChart_3_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_4 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_4 #myChart_4_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_5 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_5 #myChart_5_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #popbox_6 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_6 #myChart_6_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_7 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_7 #myChart_7_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_8 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_8 #myChart_8_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_9 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_9 #myChart_9_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_10 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_10 #myChart_10_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_11 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 40px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_11 #myChart_11_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_12 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_12 #myChart_12_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_13 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_13 #myChart_13_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_14 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_14 #myChart_14_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_15 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_15 #myChart_15_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_16 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_16 #myChart_16_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_17 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_17 #myChart_17_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_18 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_18 #myChart_18_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_19 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_19 #myChart_19_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_20 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_20 #myChart_20_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_21 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_21 #myChart_21_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_22 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_22 #myChart_22_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_23 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_23 #myChart_23_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_24 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_24 #myChart_24_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_25 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_25 #myChart_25_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_26 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_26 #myChart_26_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_27 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_27 #myChart_27_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_28 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_28 #myChart_28_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_29 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_29 #myChart_29_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_30 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_30 #myChart_30_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_31 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_31 #myChart_31_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_32 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_32 #myChart_32_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_33 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_33 #myChart_33_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_34 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_34 #myChart_34_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #popbox_35 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 30px;
+    /*padding-middle: 10px;*/
+    float: middle;
+    height: auto;
+    display: none;
+}
+#wrap #popbox_35 #myChart_35_2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PIEBOX START>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #piebox_4 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_4 #myChart_4_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_5 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-right: 10px;
+    float: left;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_5 #myChart_5_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #piebox_22 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_22 #myChart_22_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_23 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_23 #myChart_23_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_24 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_24 #myChart_24_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_25 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_25 #myChart_25_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_26 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_26 #myChart_26_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_27 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_27 #myChart_27_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_28 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_28 #myChart_28_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_29 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_29 #myChart_29_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_30 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_30 #myChart_30_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_31 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_31 #myChart_31_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_32 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_32 #myChart_32_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_33 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_33 #myChart_33_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_34 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_34 #myChart_34_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+#wrap #piebox_35 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: right;
+    height: auto;
+    display: none;
+}
+#wrap #piebox_35 #myChart_35_3 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    /*display: none;*/
+}
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ATKBOX START>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #atkbox_4 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: left;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_4 #myChart_4_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_5 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: left;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_5 #myChart_5_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #atkbox_22 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: left;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_22 #myChart_22_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_23 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_23 #myChart_23_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_24 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_24 #myChart_24_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_25 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_25 #myChart_25_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_26 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_26 #myChart_26_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_27 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_27 #myChart_27_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_28 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_28 #myChart_28_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_29 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_29 #myChart_29_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_30 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_30 #myChart_30_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_31 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_31 #myChart_31_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_32 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_32 #myChart_32_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_33 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_33 #myChart_33_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_34 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_34 #myChart_34_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+#wrap #atkbox_35 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 500px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #atkbox_35 #myChart_35_4 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    /*display: none;*/
+}
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>DEFBOX START>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #defbox_4 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: left;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_4 #myChart_4_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_5 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: left;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_5 #myChart_5_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#wrap #defbox_22 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_22 #myChart_22_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_23 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_23 #myChart_23_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_24 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_24 #myChart_24_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_25 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_25 #myChart_25_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_26 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_26 #myChart_26_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_27 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_27 #myChart_27_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_28 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_28 #myChart_28_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_29 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_29 #myChart_29_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_30 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_30 #myChart_30_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_31 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_31 #myChart_31_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_32 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_32 #myChart_32_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_33 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_33 #myChart_33_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_34 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_34 #myChart_34_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+#wrap #defbox_35 {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 105%;
+    padding-top: 50px;
+    padding-right: 50px;
+    /*float: right;*/
+    height: auto;
+    display: none;
+}
+#wrap #defbox_35 #myChart_35_5 {
+    /*height: auto;*/
+    position: relative;
+    width: 900px;
+    min-width: 800px;
+    height: 400px;
+    padding-bottom: 100px;
+    /*display: none;*/
+}
+
+
+
+
+ul .treble_list li {
+    display:inline;
+    position: relative;
+    padding-right:10px;
+    list-style:none;
+}
+ul .double_list li {
+    display:inline;
+    position: relative;
+    padding-right:10px;
+    list-style:none;
+}
